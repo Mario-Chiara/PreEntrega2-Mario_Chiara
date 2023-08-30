@@ -147,7 +147,7 @@ a {
 /*/ Footer /*/
 
 #footer {
-    width: 96%;
+    width: 100%;
     margin: auto;
     margin-block: 8px;
     display: flex;
@@ -157,7 +157,7 @@ a {
 }
 
 #footer p {
-    
+
     margin-bottom: 0%;
     font-size: 12px;
 }
@@ -177,6 +177,47 @@ a {
     display: flex;
     align-items: center;
 }
+
+/*/ PLANTEL /*/
+
+
+.container__players-coach {
+    display: flex;
+    flex-direction: column;
+    margin-top: 8px;
+}
+
+.container__players {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    color: #005B9E;
+}
+
+.players-title {
+    color: #c4c4c4;
+    font-family: "Barlow-Blank" ;
+}
+
+.players__cards {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.players__img {
+    width: 150px;
+    margin: 8px;
+}
+
+
+
+/*/ ESTADIO /*/
+/*/ PARTIDOS /*/
+/*/ CONTACTO /*/
 
 
 @media (max-width: 720px) {
@@ -276,9 +317,8 @@ a {
         margin: auto;
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(4, 1fr);
+        grid-template-rows: repeat(6, 1fr);
         grid-gap: 1%;
-        padding: 1% 0% 1% 0%;
     }
 
     .lastnews__img {
@@ -289,37 +329,37 @@ a {
 
     /*/ Footer /*/
 
-#footer {
-    width: 100%;
-    margin: auto;
-    margin-block: 8px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    color: #005B9E;
-}
+    #footer {
+        width: 100%;
+        margin: auto;
+        margin-block: 8px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        color: #005B9E;
+    }
 
-#footer p {
-    
-    margin-bottom: 0%;
-    font-size: 12px;
-}
+    #footer p {
 
-.footer__logo {
-    width: 40px;
-}
+        margin-bottom: 0%;
+        font-size: 12px;
+    }
 
-.footer__info {
-    width: 80%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
+    .footer__logo {
+        width: 40px;
+    }
 
-.footer__redes {
-    display: flex;
-    align-items: center;
-}
+    .footer__info {
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .footer__redes {
+        display: flex;
+        align-items: center;
+    }
 
 }
