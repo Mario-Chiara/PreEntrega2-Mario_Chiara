@@ -34,7 +34,7 @@ a {
 .container-fluid {
     display: flex;
     flex-direction: column;
-    }
+}
 
 
 .carrousel-home {
@@ -54,10 +54,10 @@ a {
     color: #005B9E;
 }
 
-/*/ Last News /*/
+/*/ Nex match /*/
 
 .container__nextmatch {
-    width: 60%;
+    width: 80%;
     margin: auto;
     margin-block: 1%;
     display: flex;
@@ -73,15 +73,16 @@ a {
 
 .nextmatch__logo img {
     width: 160px;
-    margin-block: 1%;
+    margin-top: 1%;
 }
 
 .nextmach__teams {
     width: 100%;
-    height: auto;
     display: flex;
     justify-content: space-around;
     color: #005B9E;
+    align-items: center;
+    margin-block: 1%;
 }
 
 .nextmach__teams img {
@@ -89,8 +90,11 @@ a {
 }
 
 .nextmach__teams h3 {
-    width: 100%;
+    width: 140px;
     font-family: "Barlow-Bold";
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0%;
 }
 
 .nextmach__teamlocal {
@@ -105,6 +109,11 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-size: 14px;
+}
+
+.nextmach__date p {
+    margin-bottom: 0%;
 }
 
 .nextmach__teamvisitor {
@@ -114,27 +123,19 @@ a {
     justify-content: space-between 1%;
 }
 
-.nextmach__teamlocal img {
-   
-}
-
-.nextmach__teamvisitor img {
-}
-
 .nextmach__teams h3 {
-    font-size: 1rem;
+    font-size: 16px;
 }
 
 /*/ Last News /*/
 
 .container__lastnews {
-    width: 80%;
+    width: 60%;
     margin: auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 1fr);
     grid-gap: 1%;
-    padding: 1% 0% 1% 0%;
 }
 
 .lastnews__img {
@@ -143,25 +144,135 @@ a {
     object-fit: cover;
 }
 
+/*/ Footer /*/
+
+#footer {
+    width: 96%;
+    margin: auto;
+    margin-block: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #005B9E;
+}
+
+#footer p {
+    
+    margin-bottom: 0%;
+    font-size: 12px;
+}
+
+.footer__logo {
+    width: 80px;
+}
+
+.footer__info {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footer__redes {
+    display: flex;
+    align-items: center;
+}
+
+
 @media (max-width: 720px) {
 
     .container-fluid {
         display: flex;
         flex-direction: row;
-        }
-        
-        .img__logo {
+    }
+
+    .img__logo {
         width: 200px;
-        }
-        
-        .nav-item a {
+    }
+
+    .nav-item a {
         font-size: 16px;
         display: flex;
         justify-content: center;
-        }
-        
-    .container__lastnews {
+    }
+
+    /*/ Nex match /*/
+
+    .container__nextmatch {
         width: 80%;
+        margin: auto;
+        margin-block: 1%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        background-color: #f5f5f573;
+    }
+
+    .nextmatch__logo {
+        display: flex;
+        justify-content: center;
+    }
+
+    .nextmatch__logo img {
+        width: 100px;
+        margin-top: 1%;
+    }
+
+    .nextmach__teams {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        color: #005B9E;
+        align-items: center;
+        margin-block: 1%;
+    }
+
+
+    .nextmach__teams img {
+        width: 40px;
+    }
+
+    .nextmach__teams h3 {
+        width: 80px;
+        font-family: "Barlow-Bold";
+        display: flex;
+        justify-content: center;
+        font-size: 12px;
+        margin-bottom: 0%;
+
+    }
+
+    .nextmach__teamlocal {
+        width: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between 1%;
+    }
+
+    .nextmach__date {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 14px;
+    }
+
+    .nextmach__date p {
+        margin-bottom: 0%;
+        font-size: 10px;
+    }
+
+    .nextmach__teamvisitor {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between 1%;
+    }
+
+    /*/ Last News /*/
+
+    .container__lastnews {
+        width: 60%;
         margin: auto;
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -169,10 +280,46 @@ a {
         grid-gap: 1%;
         padding: 1% 0% 1% 0%;
     }
-    
+
     .lastnews__img {
         width: 100%;
         height: 100%;
         object-fit: cover;
     }
+
+    /*/ Footer /*/
+
+#footer {
+    width: 100%;
+    margin: auto;
+    margin-block: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: #005B9E;
+}
+
+#footer p {
+    
+    margin-bottom: 0%;
+    font-size: 12px;
+}
+
+.footer__logo {
+    width: 40px;
+}
+
+.footer__info {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer__redes {
+    display: flex;
+    align-items: center;
+}
+
 }
